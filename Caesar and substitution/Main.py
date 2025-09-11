@@ -14,7 +14,7 @@ def shiftcharacter(k,i):
     return alfabet[p + i]
 
 # Function for encrypting text. expects an integer and a string as input
-def caesar_encrypt(i, txt):
+def caesarencrypt(i, txt):
     result = ""
     for k in txt:
         if k in alfabet:
@@ -24,7 +24,7 @@ def caesar_encrypt(i, txt):
     return result
 
 # Function for decrypting text. expects an integer and a string as input
-def caesar_decrypt(i, txt):
+def caesardecrypt(i, txt):
     result = ""
     for k in txt:
         if k in alfabet:
@@ -57,14 +57,14 @@ def substitution_decrypt(txt):
 
 # Function combining both encryption methods
 def dualencrypt(i, txt):
-    step1 = caesar_encrypt(i, txt)
+    step1 = caesarencrypt(i, txt)
     step2 = substitution_encrypt(step1)
     return step2
 
 # Function combining both decryption methods
 def dualdecrypt(i, txt):
     step1 = substitution_decrypt(txt)
-    step2 = caesar_decrypt(i, step1)
+    step2 = caesardecrypt(i, step1)
     return step2
 
 # Main menu
