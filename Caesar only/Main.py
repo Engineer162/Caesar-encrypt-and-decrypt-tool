@@ -1,6 +1,10 @@
-# Ceasar cipher encrypt and ecrypt tool written in Python, in part by Engineer162.
+# Ceasar cipher encrypt and decrypt tool written in Python, in part by Engineer162.
 
+# Define the alphabet (Danish)
 alfabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+
+# Define a substitution key (can be randomized using shuffle.py)
+key = ['D','M','T','P','Z','L','S','A','W','O','C','N','V','X','R','I','K','G','F','U','H','E','Q','J','B','Y']
 
 # Function for shifting a character by a given integer
 def shiftcharacter(k,i):
